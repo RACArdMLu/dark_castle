@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../user-block.css">
+    <title>注册 - 古堡暗影：克苏鲁的低语</title>
+    <style>
+        userinfo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* body{
+            background-attachment: fixed;
+            background-image: url("../image/background.jpg");
+        } */
+    </style>
+    <script src="login.js"></script>
+</head>
+<body>
+    <form>
+    <div id="block">
+        <p>&nbsp;</p><h1 align="center">古堡暗影：克苏鲁的低语</h1>
+        <p>&nbsp;</p><h1 align="center">注册</h1>
+        <p>&nbsp;</p><p>&nbsp;</p>
+        <userinfo>
+            <div>
+                <label for="username" style="font-size: larger;">账号:</label>
+                <input type="text" id="username_log" placeholder="请输入账号" style="font-size: large;">
+            </div>
+            <div>
+                <label for="pwd" style="font-size: larger;">密码:</label>
+                <input type="password" id="password_log" placeholder="请输入密码" style="font-size: large;">
+            </div>
+            <div  style="margin-right: 38px;" >
+                <label for="pwd" style="font-size: larger;">确认密码:</label>
+                <input type="password" id="password_log0" placeholder="请再次输入密码" style="font-size: large;">
+            </div>
+        
+        </userinfo>
+        </form>
+        <p>&nbsp;</p>
+        <div align="center"><button  type="button" onclick="log()" style="font-size: 20px; padding-left: 118px; padding-right: 118px;"><strong>注册</strong></button></div>
+        <p align="center">已有账号？点击<a href="login.html"><strong>登录</strong></a></p>
+    </div>
+</body>
+
+</html>

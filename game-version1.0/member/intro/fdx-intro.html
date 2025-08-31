@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍 - 付东宪</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 华文仿宋,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+            transform: rotate(30deg);
+        }
+        
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .profile-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .profile-img-container {
+            position: relative;
+            text-align: center;
+            padding: 30px 20px 20px;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .profile-content {
+            padding: 30px;
+        }
+        
+        .profile-content h2 {
+            color: #2575fc;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f4f8;
+            font-size: 1.8rem;
+        }
+        
+        .intro-text {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            line-height: 1.8;
+            color: #444;
+        }
+        
+        .details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .detail-card {
+            background: #f9fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #6a11cb;
+        }
+        
+        .detail-card h3 {
+            color: #6a11cb;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .detail-card h3 i {
+            margin-right: 10px;
+        }
+        
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .hobby {
+            background: #eef4ff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #2575fc;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-card {
+                flex-direction: column;
+            }
+            
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .details {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .quote {
+            font-style: italic;
+            text-align: center;
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 700px;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: #2575fc;
+            color: white;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-links a:hover {
+            background: #6a11cb;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Web开发课程小组介绍</h1>
+        <p>我们是一群充满激情和创意的大学生开发者</p>
+    </header>
+    
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-img-container">
+                <img src="../image/fdx1.jpg" alt="付东宪" class="profile-img">
+            </div>
+            
+            <div class="profile-content">
+                <h2>关于我</h2>
+                <p class="intro-text">
+                    我是付东宪，专业是人工智能，代码水平达到StackOverflow2025优秀搬运工。尽管日常在代码和bug之间反复横跳，但坚信优雅的代码就像写诗——虽然我写的诗目前只有编译器愿意读。在小组里负责前端开发，因为看得见的东西让我更有安全感。对代码的要求是：只要能跑，就不要动它.
+                </p>
+
+                <p class="intro-text">
+                    平时会内向地和键盘深情对视，在人多的地方想要猛猛钻墙角，但是为了小组作业也会坚强地政治交涉一把（），希望不要像发疯。同学说我会突然沉默————那是我在为代码默哀。
+                
+                <p class="intro-text">
+                    这次大作业，愿以毕生所学，换一个不报错的夜晚，请各位大佬带飞，我会用力鼓掌，请多指教！
+                </p>
+                
+                <div class="details">
+                    <div class="detail-card">
+                        <h3><i class="fas fa-graduation-cap"></i> 专业信息</h3>
+                        <p>ai · 大二</p>
+                        <p>GPA: 藏起来/4.0</p>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h3><i class="fas fa-code"></i> 技术栈</h3>
+                        <p>C, Python</p>
+                        <p>HTML, CSS, JavaScript（现在有了）</p>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h3><i class="fas fa-heart"></i> 兴趣爱好</h3>
+                        <div class="hobbies">
+                            <span class="hobby">阅读</span>
+                            <span class="hobby">编程</span>
+                            <span class="hobby">窝着</span>
+                            <span class="hobby">品美食</span>
+                            <span class="hobby">听故事</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quote">
+            "代码就像幽默，要么让人露出笑容，要么让人困惑不已——不幸的是，我的代码通常两者兼备。"
+        </div>
+        
+       <p>联系方式：3383198011@qq.com</p>
+    </div>
+        <p align="center" style="font-size: 20px;">
+            <a href="introduction.html">小组成员</a>：
+            <a href="hjx-intro.html">胡俊熙</a> |
+            <a href="yx-intro.html">闫旭</a> |
+            <a href="lyq-intro.html">卢允祺</a> |
+            <a href="lqx-intro.html">罗齐轩</a> |
+            <strong>付东宪</strong>
+        </p>
+</body>
+</html>

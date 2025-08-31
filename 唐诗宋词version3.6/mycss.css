@@ -1,0 +1,111 @@
+body {
+    background-image: url("images/background.jpg");
+    text-align: center;
+    margin: 50px 250px;
+}
+
+a:hover {
+    color: red;
+}
+#bread {
+    font-size: 20px;
+    text-align:left;
+    
+}
+
+.fenge{
+    width:600px;
+}
+p {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+a {
+    text-decoration: none;
+}
+
+#main_nav {
+    font-size: x-large;
+    text-align: center;
+    font-family: HYZhongYuanB5;
+}
+hezi1{
+    display:block;
+    background-color:rgba(255, 255, 224, 0.692);
+    padding: 5px;
+    transition: transform 1s;
+    margin: 20px auto;
+    font-family: SimSun;
+    background-image: url("images/bg.jpg");
+    opacity: 0.7;
+}
+hezi1:hover{transform: scale(1.1,1.1);}
+
+
+#tupian{
+
+    transition: transform 1s;
+}
+#tupian:hover{
+    transform: scale(1.1,1.1);
+}
+
+.longpara{
+    text-indent: 2em;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.jianjie{
+    text-align: left;
+    text-indent: 2em;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+#daohang{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    margin: 0 auto;
+    background-color:rgba(169, 246, 210, 0.64);
+    transition: 0.8s ease;
+    overflow: hidden;
+    background-image: url("images/bg.jpg");
+    opacity: 0.8;
+    
+    
+}
+#ml{
+   
+    margin: 0,auto;
+    /* position: fixed;left: 600px;top: 0; */
+    margin-left: 20px;
+    text-align: left;
+    font-size: 22px;
+    
+}
+#songti{
+    font-family: SimSun,Note Sans;
+}
+#yahei{
+    font-family: Microsoft YaHei;
+}
+.box-fixed{
+    position: fixed;
+    text-align: left;
+    right: 0;
+    top: 100px;
+    width: 245px;
+    background-color:rgba(231, 255, 224, 0.89);
+    z-index: 10;
+    background-image: url("images/bg1.jpg");
+    opacity: 0.8;
+    border: dashed rgb(62, 66, 62);
+    border-right: hidden;
+    border-bottom: hidden;
+    
+}

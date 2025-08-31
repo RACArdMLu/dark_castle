@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卢允祺</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('../image/lyq-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            backdrop-filter: blur(5px);
+        }
+        .name{
+            font-size: 35px;
+            font-family: KaiTi;
+        }
+        .info{
+            font-size: 25px;
+            font-family: KaiTi;
+            color: #464646;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            line-height: 1.6;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        #daohang{
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            height: 40px;
+            margin: 0 auto;
+            background-color:rgba(255, 255, 255, 0.466);
+            transition: 0.8s ease;
+            overflow: hidden;
+            opacity: 0.8;
+        }
+        #bread {
+            font-size: 20px;
+            text-align:left;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+        <div class="bg-white/80 bg-blur rounded-2xl shadow-xl overflow-hidden transform transition-custom hover:shadow-2xl opacity-0 animate-[fadeIn_1s_0.6s_forwards] max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-2/5 relative overflow-hidden">
+                    <img src="../image/lyq.jpg" alt="个人照片" class="w-full h-full object-cover transition-custom hover:scale-105 duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t to-transparent flex items-end"></div>
+                </div>
+                <div class="md:w-3/5 p-6">
+                        <p class="name">
+                            <strong>卢允祺</strong>
+                        </p><br>
+                        <p class="info">
+                            程序组&美工组<br>
+                            2419班&07032401<br>
+                            邮箱：lyq_nick@qq.com<br>
+                            兴趣爱好：听音乐、看电影、绘画、旅游、读书、羽毛球、刷剧、吃美食...<br>
+                            喜欢探索，勇于学习！希望能在计算机的世界里找到快乐与价值！
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <div id="daohang">
+        <p id="bread">
+            <div style="font-size: 20px;padding-top: 5px;padding-left: 10px;">
+                <a href="introduction.html">小组成员:</a>
+                <a href="hjx-intro.html">胡俊熙</a> |
+                <a href="yx-intro.html">闫旭</a> |
+                <strong>卢允祺</strong> |
+                <a href="lqx-intro.html">罗齐轩</a> |
+                <a href="fdx-intro.html">付东宪</a>
+            </div>
+        </p>
+    </div>
+</body>
+</html>
